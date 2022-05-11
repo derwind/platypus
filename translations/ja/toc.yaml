@@ -12,6 +12,8 @@
   sections:
     - id: why-quantum-computing
       url: /intro/why-quantum-computing
+    - id: the-atoms-of-computation
+      url: /intro/atoms-of-computation
 
 
 - title: の例
