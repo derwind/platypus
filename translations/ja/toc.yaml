@@ -16,6 +16,8 @@
       url: /intro/atoms-of-computation
     - id: what-is-quantum
       url: /intro/what-is-quantum
+      id: describing-quantum-computers
+      url: /intro/describing-quantum-computers
 
 
 - title: の例
