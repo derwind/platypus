@@ -16,8 +16,10 @@
       url: /intro/atoms-of-computation
     - id: what-is-quantum
       url: /intro/what-is-quantum
-      id: describing-quantum-computers
+    - id: describing-quantum-computers
       url: /intro/describing-quantum-computers
+    - id: entangled-states
+      url: /intro/entangled-states
 
 
 - title: の例
