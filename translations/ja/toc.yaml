@@ -197,3 +197,6 @@
     - id: entangled-states
       uuid: 98aa9032-aebc-11ec-b909-0242ac120002
       url: /intro/entangled-states
+    - id: visualizing-entanglement
+      uuid: 9e8ceb9e-aebc-11ec-b909-0242ac120002
+      url: /intro/visualizing-entanglement
