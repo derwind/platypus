@@ -206,3 +206,20 @@
     - id: project
       uuid: e25c3f90-aebd-11ec-b909-0242ac120002
       url: /intro/project
+
+- title: Quantum Machine Learning
+  url: /machine-learning
+  type: learning-path
+  sections:
+    - id: introduction
+      uuid: 16e935fc-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/introduction
+    - id: parameterized-quantum-circuits
+      uuid: 19a9f4de-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/pqc
+    - id: data-encoding
+      uuid: 1d09af66-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/encoding
+    - id: quantum-generative-adversarial-networks
+      uuid: 2ff2a3e4-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/qgan
