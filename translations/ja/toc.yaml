@@ -138,6 +138,14 @@
       url: /ch-quantum-hardware/cQED-JC-SW
 
 
+- title: Quantum Computing Labs
+  url: /ch-labs
+  sections:
+    - id: lab-9-quantum-simulation-as-a-search-algorithm
+      uuid: 59a076f4-b51a-11ec-b909-0242ac120002
+      url: /ch-labs/Lab09_QuantumSimulationSearchAlgorithm
+
+
 - title: Appendix(付録)
   url: /ch-appendix
   sections:
