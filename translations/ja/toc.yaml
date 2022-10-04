@@ -128,6 +128,9 @@
     - id: randomized-benchmarking
       uuid: 1fa1d22c-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware/randomized-benchmarking
+    - id: The Density Matrix and Mixed States
+      uuid: 498dce44-cae9-11ec-9d64-0242ac120002
+      url: /quantum-hardware/density-matrix
 
 
 - title: マイクロ波パルスによる量子ハードウェアの探究
@@ -159,8 +162,8 @@
     - id: lab-4-bell-ghz-circuit
       uuid: 4a04a0f8-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab04_Bell_GHZ_Circuit
-    
-    
+
+
 - title: Appendix(付録)
   url: /ch-appendix
   sections:
@@ -208,8 +211,8 @@
     - id: phase-kickback
       uuid: 976e9da6-6c33-4e2f-b7eb-f9588f700f07
       url: /algorithms/phase-kickback
-      
-      
+
+
 - title: 量子コンピューター入門
   url: /introduction
   type: learning-path
@@ -265,8 +268,8 @@
     - id: careers-in-computing
       uuid: bf1b8a5a-b51a-11ec-b909-0242ac120002
       url: /summer-school/2020/lec-09
-      
-      
+
+
 - title: 量子機械学習
   url: /machine-learning
   type: learning-path
