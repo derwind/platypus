@@ -128,7 +128,7 @@
     - id: randomized-benchmarking
       uuid: 1fa1d22c-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware/randomized-benchmarking
-    - id: The Density Matrix and Mixed States
+    - id: density-matrix
       uuid: 498dce44-cae9-11ec-9d64-0242ac120002
       url: /quantum-hardware/density-matrix
 
