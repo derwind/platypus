@@ -128,6 +128,9 @@
     - id: randomized-benchmarking
       uuid: 1fa1d22c-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware/randomized-benchmarking
+    - id: measuring-quantum-volume
+      uuid: 22ab0bd2-b51a-11ec-b909-0242ac120002
+      url: /quantum-hardware/measuring-quantum-volume
     - id: density-matrix
       uuid: 498dce44-cae9-11ec-9d64-0242ac120002
       url: /quantum-hardware/density-matrix
