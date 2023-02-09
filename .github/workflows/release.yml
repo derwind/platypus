@@ -13,7 +13,7 @@ jobs:
   build-test-release:
     # Run only from the original repository
     # Because this job requires secrets, which cannot be shared with forks
-    if: github.repository == 'Qiskit/platypus'
+    if: github.repository == 'derwind/platypus'
 
     name: Build, Test, and Release
 
@@ -51,42 +51,8 @@ jobs:
       - name: Install Vale
         run: sudo snap install --edge vale
 
-      - name: Secrets
-        run: npm run setup:secrets -- --mongo "${{ secrets.PRODUCTION_MONGODB_URI }}" --ibmClientId "${{ secrets.PRODUCTION_IBMID_CLIENT_ID }}" --ibmClientSecret "${{ secrets.PRODUCTION_IBMID_CLIENT_SECRET }}" --googleClientId "${{ secrets.PRODUCTION_GOOGLE_CLIENT_ID }}" --googleClientSecret "${{ secrets.PRODUCTION_GOOGLE_CLIENT_SECRET }}"
-
       - name: Notebook tests
         run: npm run test:nb
 
       - name: Build
         run: npm run build
-
-      - name: Cypress tests
-        uses: cypress-io/github-action@v2
-        with:
-          start: npm start
-          wait-on: "http://localhost:8080/health"
-
-      # We remove the Dockerfile because when there is a Dockerfile in the
-      # current directory, Google App Engine try to use it.
-      - name: Remove Dockerfile
-        run: rm -f Dockerfile
-
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v0
-        with:
-          credentials_json: ${{ secrets.GCLOUD_SERVICE_ACCOUNT }}
-
-      - name: Deploy to App Engine
-        env:
-          CLOUDSDK_APP_CLOUD_BUILD_TIMEOUT: 1000
-        uses: google-github-actions/deploy-appengine@v0
-        with:
-          # The GCLOUD_SERVICE_ACCOUNT secret is defined in the GitHub repo.
-          # It needs the following permissions
-          #  - roles/appengine.appAdmin
-          #  - roles/iam.serviceAccountUser
-          #  - roles/compute.storageAdmin
-          #  - cloudbuild.builds.editor
-          deliverables: app.yaml
-          # qiskit-web is the Google Cloud App ID provided by Mathigon
-          project_id: qiskit-web
