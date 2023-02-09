@@ -30,6 +30,10 @@ jobs:
 
       - run: npm ci
 
+      - run: node --version
+
+      - run: npm --version
+
       - name: Install Python 3.8
         uses: actions/setup-python@v2
         with:
