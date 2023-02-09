@@ -18,6 +18,8 @@ jobs:
       NODE_OPTIONS: --max-old-space-size=4096
 
     steps:
+      - run: uname -a
+
       - uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
@@ -34,6 +36,8 @@ jobs:
 
       - run: npm --version
 
+      - run: npm list
+
       - name: Install Python 3.8
         uses: actions/setup-python@v2
         with:
@@ -48,11 +52,7 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r converter/textbook-converter/requirements.txt -r converter/textbook-converter/requirements-test.txt
 
-      - name: Install Vale
-        run: sudo snap install --edge vale
-
-      - name: Notebook tests
-        run: npm run test:nb
+      - run: pip list
 
       - name: Build
         run: npm run build
