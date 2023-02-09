@@ -4,10 +4,6 @@ on:
   workflow_dispatch:
   push:
     branches: [release]
-  # run daily at 08:00am UTC (on the default or base branch)
-  # https://crontab.guru/#0_8_*_*_*
-  schedule:
-    - cron: "0 8 * * *"
 
 jobs:
   build-test-release:
